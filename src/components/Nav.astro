@@ -38,15 +38,6 @@ const iconLinks: {
 
 <nav>
   <div class="menu-header">
-    <a href="/" class="site-title">
-      <!--   <Icon
-        icon="terminal-window"
-        color="var(--accent-regular)"
-        size="1.6em"
-        gradient
-      /> -->
-      <!-- Radu Necula -->
-    </a>
     <menu-button>
       <template>
         <button class="menu-button" aria-expanded="false">
@@ -57,44 +48,6 @@ const iconLinks: {
     </menu-button>
   </div>
 
-  <!--   <noscript>
-    <ul class="nav-items">
-      {
-        textLinks.map(({ label, href }) => (
-          <li>
-            <a
-              aria-current={Astro.url.pathname === href}
-              class:list={[
-                "link",
-                {
-                  active:
-                    Astro.url.pathname === href ||
-                    (href !== "/" && Astro.url.pathname.startsWith(href)),
-                },
-              ]}
-              href={href}
-            >
-              {label}
-            </a>
-          </li>
-        ))
-      }
-    </ul>
-  </noscript>
-  <noscript>
-    <div class="menu-footer">
-      <div class="socials">
-        {
-          iconLinks.map(({ href, icon, label }) => (
-            <a href={href} class="social">
-              <span class="sr-only">{label}</span>
-              <Icon icon={icon} />
-            </a>
-          ))
-        }
-      </div>
-    </div>
-  </noscript> -->
   <div id="menu-content" hidden>
     <ul class="nav-items">
       {
@@ -128,22 +81,10 @@ const iconLinks: {
         }
       </li>
     </ul>
-    <!--     <div class="menu-footer">
-      <div class="socials">
-        {
-          iconLinks.map(({ href, icon, label }) => (
-            <a href={href} class="social">
-              <span class="sr-only">{label}</span>
-              <Icon icon={icon} />
-            </a>
-          ))
-        }
-      </div> -->
 
     <!--  <div class="theme-toggle">
           <ThemeToggle />
         </div> -->
-    <!-- </div> -->
   </div>
 </nav>
 
@@ -198,15 +139,6 @@ const iconLinks: {
     justify-content: space-between;
     gap: 0.5rem;
     padding: 1.5rem;
-  }
-
-  .site-title {
-    display: flex;
-    gap: 0.5rem;
-    align-items: center;
-    line-height: 1.1;
-    color: var(--gray-0);
-    text-decoration: none;
   }
 
   .menu-button {
@@ -321,10 +253,6 @@ const iconLinks: {
 
     .menu-header {
       padding: 0;
-    }
-
-    .site-title {
-      font-size: var(--text-lg);
     }
 
     .menu-content {

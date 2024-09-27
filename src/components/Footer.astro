@@ -1,50 +1,11 @@
 ---
-/* import Logo from "./Logo.astro";
-import type { iconPaths } from "./IconPaths"; */
 
-const currentYear = new Date().getFullYear();
-
-/** Icon links to social media — edit these with links to your profiles! */
-/* const iconLinks: {
-  label: string;
-  href: string;
-  icon: keyof typeof iconPaths;
-}[] = [
-  {
-    label: "Dropbox",
-    href: "https://www.dropbox.com/@me",
-    icon: "dropbox-logo",
-  },
-]; */
 ---
 
 <footer>
-  <!--   <div class="group">
-    <p>
-      Designed & Developed in Piatra Neamt with <a href="https://astro.build/"
-        >Astro</a
-      >
-      <Icon icon="rocket-launch" size="1.2em" />
-    </p>
-    <p>&copy; {currentYear} Radu Necula</p>
-  </div>
-  <p class="socials">
-    <a href="https://twitter.com/me"> Twitter</a>
-    <a href="https://github.com/me"> GitHub</a>
-    <a href="https://codepen.io/me"> CodePen</a>
-  </p> -->
   <div class="stack">
     <div class="footer-span"><span>Worked with</span></div>
     <div class="menu-header">
-      <!--     <menu-button>
-      <template>
-        <button class="menu-button" aria-expanded="false">
-          <span class="sr-only">Menu</span>
-          <Icon icon="list" />
-        </button>
-      </template>
-    </menu-button> -->
-
       <svg
         height="60"
         fill="currentcolor"
@@ -125,35 +86,6 @@ const currentYear = new Date().getFullYear();
         ></svg
       >
     </div>
-
-    <!--   <noscript>
-    <div class="menu-footer">
-      <div class="socials">
-        {
-          iconLinks.map(({ href, icon, label }) => (
-            <a href={href} class="social">
-              <span class="sr-only">{label}</span>
-              <Icon icon={icon} />
-            </a>
-          ))
-        }
-      </div>
-    </div>
-  </noscript> -->
-    <!--  <div id="menu-content" hidden>
-    <div class="menu-footer">
-      <div class="socials">
-        {
-          iconLinks.map(({ href, icon, label }) => (
-            <a href={href} class="social">
-              <span class="sr-only">{label}</span>
-              <Icon icon={icon} />
-            </a>
-          ))
-        }
-      </div>
-    </div>
-  </div> -->
   </div>
 </footer>
 
