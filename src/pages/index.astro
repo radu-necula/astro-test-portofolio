@@ -42,7 +42,7 @@ import Skills from '../components/Skills.astro'; */
     <div class="wrapper stack gap-8 lg:gap-20">
       <header class="hero">
         <Hero
-          title="Hello, my name is Radu Necula"
+          title="Radu Necula"
           tagline="I am a Creative Developer who is currently based in Piatra Neamt, Romania."
           align="start"
         >
@@ -72,7 +72,10 @@ import Skills from '../components/Skills.astro'; */
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     gap: 2rem;
+    flex-shrink: 1;
+    flex-wrap: wrap;
   }
 
   .roles {
@@ -88,6 +91,7 @@ import Skills from '../components/Skills.astro'; */
     object-position: top;
     border-radius: 9rem;
     box-shadow: var(--shadow-md);
-    min-width: 350px;
+    /* min-width: 350px; */
+    flex-basis: 350px;
   }
 </style>

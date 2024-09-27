@@ -40,7 +40,7 @@ const iconLinks: {
 <nav>
   <div class="menu-header">
     <a href="/" class="site-title">
-    <!--   <Icon
+      <!--   <Icon
         icon="terminal-window"
         color="var(--accent-regular)"
         size="1.6em"
@@ -57,8 +57,8 @@ const iconLinks: {
       </template>
     </menu-button>
   </div>
-  
-<!--   <noscript>
+
+  <!--   <noscript>
     <ul class="nav-items">
       {
         textLinks.map(({ label, href }) => (
@@ -118,8 +118,18 @@ const iconLinks: {
           </li>
         ))
       }
+      <li class="socials">
+        {
+          iconLinks.map(({ href, icon, label }) => (
+            <a href={href} class="social">
+              <span class="sr-only">{label}</span>
+              <Icon icon={icon} />
+            </a>
+          ))
+        }
+      </li>
     </ul>
-    <div class="menu-footer">
+<!--     <div class="menu-footer">
       <div class="socials">
         {
           iconLinks.map(({ href, icon, label }) => (
@@ -129,12 +139,12 @@ const iconLinks: {
             </a>
           ))
         }
-      </div>
+      </div> -->
 
       <!--  <div class="theme-toggle">
           <ThemeToggle />
         </div> -->
-    </div>
+    <!-- </div> -->
   </div>
 </nav>
 
@@ -238,6 +248,7 @@ const iconLinks: {
   }
 
   .nav-items {
+    --icon-size: var(--text-xl);
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -278,6 +289,7 @@ const iconLinks: {
     flex-wrap: wrap;
     gap: 0.625rem;
     font-size: var(--icon-size);
+    align-content: center;
   }
 
   .social {
@@ -323,12 +335,17 @@ const iconLinks: {
     .nav-items {
       position: relative;
       flex-direction: row;
-      font-size: var(--text-md);
+      font-size: var(--text-sm);
       border-radius: 10px;
       border: 0;
       padding: 0.5rem 0.5625rem;
-      background: radial-gradient(var(--gray-900), var(--gray-800) 150%);
+      /* background: radial-gradient(var(--gray-900), var(--gray-800) 150%); */
+      background-color: #1b1b1b;
       box-shadow: var(--shadow-md);
+      min-width: 800px;
+      justify-content: space-between;
+      font-family: var(--font-body);
+      font-weight: 400;
     }
 
     .nav-items::before {
@@ -369,18 +386,18 @@ const iconLinks: {
       box-shadow: none;
     }
 
-    .socials {
+/*     .socials {
       display: none;
-    }
+    } */
   }
 
-  @media (min-width: 60em) {
+/*   @media (min-width: 60em) {
     .socials {
       display: flex;
       justify-content: flex-end;
       gap: 0;
     }
-  }
+  } */
   @media (forced-colors: active) {
     .link.active {
       color: SelectedItem;
