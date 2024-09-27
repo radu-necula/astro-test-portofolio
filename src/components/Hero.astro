@@ -18,7 +18,7 @@ const { align = "center", tagline, title } = Astro.props;
 
 <style>
   .hero {
-    font-size: var(--text-lg);
+    /* font-size: var(--text-lg); */
     /* text-align: center; */
   }
 
@@ -29,7 +29,7 @@ const { align = "center", tagline, title } = Astro.props;
   }
 
   .title {
-    font-size: var(--text-xl);
+    /* font-size: var(--text-xl); */
     color: var(--gray-0);
     text-align: start;
     font-family: var(--font-brand);
@@ -52,9 +52,9 @@ const { align = "center", tagline, title } = Astro.props;
   }
 
   @media (min-width: 50em) {
-    .hero {
+    /* .hero {
       font-size: var(--text-xl);
-    }
+    } */
 
     .start {
       text-align: start;
@@ -65,8 +65,8 @@ const { align = "center", tagline, title } = Astro.props;
       margin-inline: unset;
     }
 
-    .title {
+   /*  .title {
       font-size: var(--text-xl);
-    }
+    } */
   }
 </style>
