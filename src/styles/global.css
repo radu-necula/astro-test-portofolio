@@ -149,7 +149,7 @@
   --accent-subtle-overlay: hsla(121, 81%, 36%, 0.33);
   --accent-text-over: var(--gray-0);
 
-  --link-color: var(--accent-dark);
+  --link-color: var(--gray-300);
 
   --gradient-stop-1: #4c11c6;
   --gradient-subtle: linear-gradient(
